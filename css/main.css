@@ -982,3 +982,9 @@ figcaption.mask span {
 .copyright p:first-child {
     margin-bottom: 15px;
 }
+
+#map {
+        width: 100%;
+        height: 400px;
+        background-color: grey;
+      }

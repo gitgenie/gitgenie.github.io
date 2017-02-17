@@ -42,6 +42,7 @@
 		
 		<!-- Modernizer Script for old Browsers -->
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAwuwQNufKmtPI6Nb4iGtDYU5Z3WdxVOg&callback=initMap"></script>
 		
     </head>
 	
@@ -110,8 +111,8 @@
 
                     <div class="item active"  style="background-image: url('img/slider/sdxsxsw.jpg')" >
                         <div class="carousel-caption">
-                            <div style="text-align:right" class="animated bounceInRight">
-                                <h1><strong>INNOVATION</strong></br> THAT</br> CONNECTS</br> PEOPLE</br></h1>
+                            <div style="text-align:right" class="animated bounceInRight"><br><br>
+                                <h1><strong>INNOVATION</strong></br> WITH</br> PEOPLE</br> CONNECT</br></h1>
                                 <p>Staffing - Learning - Product development.</p>
                             </div>
                         </div>
@@ -532,38 +533,8 @@
                                 </div>
                             </div>
 
-                        </div> <!-- end #testimonial -->
+                        </div> <!-- end #management -->
                     </div> <!-- end .col-md-5 -->
-
-                    <div class="col-md-5 col-md-offset-1 wow fadeInRight">
-
-                        <div class="subtitle text-center">
-                            <h3>OUR SKILLS</h3>
-                            <p>something something something something something something something something something something something something something something something something something </p>
-                        </div>
-
-                        <div class="progress-bars">
-                            
-                            <span>VOLTE - <small>95%</small></span>
-                            <div class="progress"  data-progress="95">
-                                <div class="bar"></div>
-                            </div>
-                            <span>5G - <small>93%</small></span>
-                            <div class="progress"  data-progress="93">
-                                <div class="bar"></div>
-                            </div>
-                            <span>WIFI - <small>85%</small></span>
-                            <div class="progress" data-progress="85">
-                                <div class="bar"></div>
-                            </div>
-                            <span>something - <small>87%</small></span>
-                            <div class="progress kill-margin"  data-progress="87">
-                                <div class="bar"></div>
-                            </div>
-
-                        </div>  <!-- progress-bars -->
-
-                    </div>  <!-- end .col-md-5 -->
 
                 </div>
             </div>
@@ -726,18 +697,8 @@
                     
                     <div class="col-md-8 col-sm-9 wow fadeInLeft">
                         <div class="contact-form clearfix">
-                            <form action="index.html" method="post">
-                                <div class="input-field">
-                                    <input type="text" class="form-control" name="name" placeholder="Your Name" required="">
-                                </div>
-                                <div class="input-field">
-                                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                                </div>
-                                <div class="input-field message">
-                                    <textarea name="message" class="form-control" placeholder="Your Message" required=""></textarea>
-                                </div>
-                                <input type="submit" class="btn btn-blue pull-right" value="SEND MESSAGE" id="msg-submit">
-                            </form>
+                            <h3>Map</h3>
+                            <div id="map"></div>
                         </div> <!-- end .contact-form -->
                     </div> <!-- .col-md-8 -->
 
