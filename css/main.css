@@ -79,7 +79,7 @@ body > section {
 }
 
 .section-title {
-  margin: 0 auto 85px;
+  margin: 0 auto 30px;
   width: 420px;
 }
 
@@ -384,7 +384,12 @@ width: 11px;
   line-height: 24px;
 }
 
-
+#service  ul >li{
+    line-height: 24px;
+}
+#service  ul {
+list-style-type:circle;
+}
 /*============================================================
     Service Bottom
 ============================================================*/
