@@ -14,7 +14,7 @@ License     : GPL
 body {
     background-color: #fff;
     font-family: 'Open Sans', sans-serif;
-    line-height: 1;
+/*    line-height: 1;*/
 	font-size: 13px;
     color: #a8a8a8;
 }
@@ -115,7 +115,7 @@ position: absolute;
 width: 11px;
 }
 
-.section-title p {
+.section-title p,modal-body >p {
     line-height: 25px;
     font-weight: 300;
     font-size: 13px;
@@ -336,6 +336,7 @@ width: 11px;
     Services
 ============================================================*/
 
+
 #service .media > .pull-left{
     margin-right: 50px;
 }
@@ -442,7 +443,23 @@ list-style-type:circle;
   padding-left: 50px;
 }
 
+.modal-header{
+    background: #00A6EA;
+    border-radius: 3px;
+}
 
+.modal-header h4{
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+.modal-body {
+    padding: 54px;
+}
+.modal-body>p, .modal-body>ul{
+    padding-bottom: 20px;
+    text-align: justify;
+}
 /*============================================================
     Portfolio
 ============================================================*/
@@ -971,3 +988,4 @@ address{
         height: 400px;
         background-color: grey;
       }
+
