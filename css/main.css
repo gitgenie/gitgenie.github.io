@@ -195,8 +195,8 @@ width: 11px;
 }
 
 .navigation .navbar-nav > li.current > a {
-  color: #00C7FC;
-  border-bottom: 1px solid #00C7FC;
+  color: #fff;
+  border-bottom: 2px solid #fff;
 }
 
 .animated-nav .navigation .navbar-nav > li.current > a {
