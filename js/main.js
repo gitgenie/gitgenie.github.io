@@ -17,8 +17,8 @@ $(function(){
             jQuery("#navigation").css("background-color","#00C7FC");
             jQuery("#navigation").addClass("animated-nav");
         } else {
-            jQuery("#navigation").css("background-color","white");
-            jQuery(".navigation .navbar-nav > li > a").addClass("blackText");
+//            jQuery("#navigation").css("background-color","white");
+//            jQuery(".navigation .navbar-nav > li > a").addClass("blackText");
             jQuery("#navigation").removeClass("animated-nav");
         }
     });
