@@ -355,13 +355,10 @@ width: 11px;
 }
 
 #service .media{
+	cursor:pointer;
     padding-bottom: 50px;
     padding-left: 20px;
 }
-
-
-
-
 .service-item {
     margin-bottom: 70px;
 }

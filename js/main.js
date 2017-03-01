@@ -12,12 +12,12 @@ $(function(){
     /* ========================================================================= */
 
     jQuery(window).scroll(function () {
-        if (jQuery(window).scrollTop() > 400) {
+        if (jQuery(window).scrollTop() > 500) {
             //jQuery(".navigation .navbar-nav > li > a").removeClass("blackText");
             jQuery("#navigation").css("background-color","#00C7FC");
             jQuery("#navigation").addClass("animated-nav");
         } else {
-//            jQuery("#navigation").css("background-color","white");
+           jQuery("#navigation").css("background-color","transparent");
 //            jQuery(".navigation .navbar-nav > li > a").addClass("blackText");
             jQuery("#navigation").removeClass("animated-nav");
         }
