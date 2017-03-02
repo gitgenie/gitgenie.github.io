@@ -959,9 +959,10 @@ address{
 }
 
 .copyright {
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 600;
     color: #fff;
+	margin-top: 40px;
 }
 
 .copyright a {
