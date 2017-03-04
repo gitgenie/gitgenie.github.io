@@ -347,7 +347,7 @@ width: 11px;
     font-size: 20px;
     margin-bottom: 15px;
 }
-.media-body a:hover{
+address> p>a:hover, .media-body a:hover{
 	color:#00C7FC;
 }
 
