@@ -347,6 +347,9 @@ width: 11px;
     font-size: 20px;
     margin-bottom: 15px;
 }
+.media-body a:hover{
+	color:#00C7FC;
+}
 
 #service .media .media-body p{
     color: #A8A8A8;

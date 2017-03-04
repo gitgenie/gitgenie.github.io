@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -43,13 +44,58 @@
 		
 		<!-- Modernizer Script for old Browsers -->
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+<!--		jquery-->
+		<script  src="https://code.jquery.com/jquery-3.1.1.min.js"  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+
 <!--        google map api-->
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAwuwQNufKmtPI6Nb4iGtDYU5Z3WdxVOg&callback=initMap"></script>
+<!--        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAwuwQNufKmtPI6Nb4iGtDYU5Z3WdxVOg&callback=initMap"></script>-->
 
     </head>
 	
-    <body>
+    <body onload="loadMap()">
+         <style>
+            #map-canvas {
+                width: 90%;
+                height: 400px;
+            }
+        </style>            
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyCAwuwQNufKmtPI6Nb4iGtDYU5Z3WdxVOg"></script>       
+        <script type="text/javascript">
+            
+		   function loadMap() {    
+				console.log("hey there");
+                //var myLatlng = new google.maps.LatLng(33.89342, -84.30715);
+			    var uluru = {lat: 12.998, lng: 77.484};
+                var mapOptions = {
+                  zoom: 4,
+                  center: uluru,
+                  mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+			    var marker = new google.maps.Marker({
+					position: uluru,
+					map: map,
+					title: 'Location'
+        		});
 
+                var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+			   
+			    marker.setMap(map);
+
+//                var marker = new google.maps.Marker({
+//                    position: myLatlng,
+//                    map: map,
+//                    title: 'Location'
+//                });
+				
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+       
+          //  });             
+						   }
+		</script>
         <!--
         Fixed Navigation
         ==================================== -->
@@ -111,7 +157,7 @@
 
                 <div class="carousel-inner">
 
-                    <div class="item active"  style="background-image: url('img/slider/sdxsxsw.jpg')" >
+                    <div class="item active"  style="width:100%;height:100%;background-image:url('img/slider/sdxsxsw.jpg')" >
                         <div class="carousel-caption">
                             <div style="text-align:right" class="animated bounceInRight"><br><br>
                                 <h2><strong>INNOVATION</strong></br> WITH</br> PEOPLE CONNECT</br></h2>
@@ -193,6 +239,7 @@
                                 <li>UX validation</li>
                                 <li>Testing Automation</li>
                                 </ul>
+								<a >More...</a>
 							</div>
                         </div>
 
@@ -255,7 +302,7 @@
                                 <li>Field Interoperability and Mobility testing</li>
                                 <li>Reliability Testing – MTBF</li>
                                 </ul>
-                               
+                               <a >More...</a>
                             </div>
                         </div>
                         
@@ -303,6 +350,7 @@
                                 <li>RF Survey</li>
                                 <li>Drive testing</li>
                                 </ul>
+								<a >More...</a>
                             </div>
                         </div>
                     </div>
@@ -345,7 +393,7 @@
                             </a>
                             <div class="media-body">
                                 <h3>Hardware Installation, Commissioning, Configuration and Support</h3>
-                                <p>Complete turnkey execution or skilled resource augmentation for all HW installation, commissioning and support related projects.</p>
+                                <p>Complete turnkey execution or skilled resource augmentation for all HW installation, commissioning and support related projects.</p><a >More...</a>
                             </div>
                         </div>
                     </div>
@@ -381,7 +429,7 @@
                             </a>
                             <div class="media-body">
                                 <h3>Turnkey Execution & Delivery</h3>
-                                <p>Turnkey solutions for Clients on telecom Projects in most cost effective manner with best technical support.   </p>
+                                <p>Turnkey solutions for Clients on telecom Projects in most cost effective manner with best technical support.   </p><a >More...</a>
                             </div>
                         </div>
                     </div>
@@ -410,7 +458,7 @@
                             </a>
                             <div class="media-body">
                                 <h3>Independent Skill Sourcing</h3>
-                                <p>Offering highly efficient staffing and temp services to the clients based on their requirement, any time and all time, any location and irrespective of the skills. </p>
+                                <p>Offering highly efficient staffing and temp services to the clients based on their requirement, any time and all time, any location and irrespective of the skills. </p><a >More...</a>
                             </div>
                         </div>
                     </div>
@@ -642,9 +690,9 @@
                         <p>Let us get in touch</p>
                     </div>
                     
-                    <div class="col-md-8 col-sm-9 wow fadeInLeft">
-                        <div class="contact-form clearfix">
-                            <div id="map"></div>
+                    <div id="wrapper" data-role="page" class="col-md-8 col-sm-9 wow fadeInLeft">
+                        <div id="content" class="contact-form clearfix">
+                            <div id="map-canvas"></div>
                         </div> <!-- end .contact-form -->
                     </div> <!-- .col-md-8 -->
 
