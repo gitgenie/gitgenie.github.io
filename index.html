@@ -56,16 +56,14 @@
     <body onload="loadMap()">
          <style>
             #map-canvas {
-                width: 90%;
-                height: 400px;
+                width: 100%;
+                height: 300px;
             }
         </style>            
-        <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyCAwuwQNufKmtPI6Nb4iGtDYU5Z3WdxVOg"></script>       
+        <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyCAwuwQNufKmtPI6Nb4iGtDYU5Z3WdxVOg"></script>       
         <script type="text/javascript">
             
 		   function loadMap() {    
-				console.log("hey there");
-                //var myLatlng = new google.maps.LatLng(33.89342, -84.30715);
 			    var uluru = {lat: 12.998, lng: 77.484};
                 var mapOptions = {
                   zoom: 4,
@@ -81,20 +79,7 @@
                 var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
 			   
 			    marker.setMap(map);
-
-//                var marker = new google.maps.Marker({
-//                    position: myLatlng,
-//                    map: map,
-//                    title: 'Location'
-//                });
-				
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
-        });
-       
-          //  });             
-						   }
+			   }
 		</script>
         <!--
         Fixed Navigation
@@ -157,7 +142,7 @@
 
                 <div class="carousel-inner">
 
-                    <div class="item active"  style="width:100%;height:100%;background-image:url('img/slider/sdxsxsw.jpg')" >
+                    <div class="item active"  style="width:100%;height:100vh;background-image:url('img/slider/sdxsxsw.jpg')" >
                         <div class="carousel-caption">
                             <div style="text-align:right" class="animated bounceInRight"><br><br>
                                 <h2><strong>INNOVATION</strong></br> WITH</br> PEOPLE CONNECT</br></h2>

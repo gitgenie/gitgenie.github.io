@@ -193,15 +193,21 @@ width: 11px;
   padding: 38px 25px;
   text-transform: uppercase;
 }
+.navbar-nav > li > a:hover{
+	font-size: 14px;	
+	text-shadow: 0 0 3px #fff ;
+}
 
 .navigation .navbar-nav > li.current > a {
-  color: #fff;
-  border-bottom: 2px solid #fff;
+  	color: #fff;
+	font-size: 14px;	
+	text-shadow: 0 0 3px #fff ;
+  	border-bottom: 3px solid #fff;
 }
 
 .animated-nav .navigation .navbar-nav > li.current > a {
   color: #fff;
-  border-bottom: 1px solid #fff;
+  border-bottom: 3px solid #fff;
 }
 
 .navigation .navbar-nav > li > a:focus,
@@ -623,9 +629,12 @@ figcaption.mask span {
 }
 
 .fact-item p {
-  font-weight: 300;
+  font-weight: 600;
+	padding: 0;
 }
-
+.fact-item{
+	padding: 30px 0 30px 0;
+}
 
 /*============================================================
     About Us
