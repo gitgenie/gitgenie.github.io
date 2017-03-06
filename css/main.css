@@ -449,6 +449,13 @@ list-style-type:circle;
   padding-left: 50px;
 }
 
+@media (min-width: 768px) {
+  .modal-xl {
+    width: 90%;
+   max-width:1200px;
+  }
+}
+
 .modal-header{
     background: #00A6EA;
     border-radius: 3px;
