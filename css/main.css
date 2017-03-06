@@ -469,6 +469,9 @@ list-style-type:circle;
 .modal-body {
     padding: 54px;
 }
+.modal-body > img {
+	width: 100%;
+}
 .modal-body>p, .modal-body>ul{
     padding-bottom: 20px;
     text-align: justify;
