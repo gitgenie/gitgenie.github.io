@@ -11,21 +11,20 @@ $(function(){
     /*  Menu item highlighting
     /* ========================================================================= */
 
-    jQuery(window).scroll(function () {
-        if (jQuery(window).scrollTop() > 500) {
-            //jQuery(".navigation .navbar-nav > li > a").removeClass("blackText");
-            jQuery("#navigation").css("background-color","#00C7FC");
-            jQuery("#navigation").addClass("animated-nav");
-        } else {
-           jQuery("#navigation").css("background-color","transparent");
-//            jQuery(".navigation .navbar-nav > li > a").addClass("blackText");
-            jQuery("#navigation").removeClass("animated-nav");
-        }
-    });
-
-    $('#nav').onePageNav({
+//    jQuery(window).scroll(function () {
+//        if (jQuery(window).scrollTop() > 500) {
+//            //jQuery(".navigation .navbar-nav > li > a").removeClass("blackText");
+////            jQuery("#navigation").css("background-color", "rgba(255, 255, 255, .7)");
+//           jQuery("#navigation").addClass("animated-nav");
+//        } else {
+////           jQuery("#navigation").css("background-color","#fff");
+////            jQuery(".navigation .navbar-nav > li > a").addClass("blackText");
+//        }
+//    });
+	
+	$('#nav').onePageNav({
         filter: ':not(.external)',
-        scrollSpeed: 950,
+        scrollSpeed: 500,
         scrollThreshold: 1
     });
 
@@ -37,9 +36,9 @@ $(function(){
         $('#home-carousel .carousel-inner .item, #home-carousel .video-container').css('height',slideHeight);
     });
 
-    // portfolio filtering
-
-    $("#projects").mixItUp();
+//    // portfolio filtering
+//
+//    $("#projects").mixItUp();
 
     //fancybox
 
