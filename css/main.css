@@ -19,8 +19,8 @@ body {
     color: #a8a8a8;
 }
 #logoImage{
-    height: 38px;
-    width: 153px;
+   border-radius: 15px 0;
+	margin: 3px 20px;
 }
 ol, ul {
     margin: 0;
@@ -162,7 +162,7 @@ width: 11px;
     color: black !important;
 }
 .animated-nav .navbar-brand {
-  padding: 15px 0;
+  padding: 0px 0;
 }
 
 .animated-nav .navigation .navbar-nav > li > a {
