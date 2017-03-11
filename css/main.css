@@ -117,9 +117,9 @@ width: 11px;
 .section-title p,modal-body >p {
     line-height: 25px;
     font-weight: 300;
-    font-size: 13px;
+    font-size: 15px;
+	padding-bottom: 30px;
 }
-
 .btn {
     border-radius: 0;
 }
@@ -157,9 +157,6 @@ width: 11px;
           transition: all 0.6s ease;
 }
 
-.blackText{
-    color: black !important;
-}
 
 .animated-nav .navigation .navbar-nav > li > a {
   padding: 23px 25px;
@@ -295,8 +292,8 @@ box-shadow:  0px 0px 5px #888888;
 
 #home-carousel .carousel-inner p {
   color: #FFFFFF;
-  line-height: 28px;
-  font-size: 13px;
+  line-height: 37px;
+  font-size: 16px;
   margin-top: 0;
   text-shadow:none;
 }
@@ -595,7 +592,7 @@ figcaption.mask span {
 }
 
 .counter-section {
-  background-color: #096c89;
+  background-color: #0d48a4;
   padding: 25px 0 40px;
 }
 
@@ -938,8 +935,16 @@ address{
   margin-bottom: 13px;
 }
 
+.twitter-timeline, #map-canvas{
+	box-shadow:  0px 0px 9px #ccc;
+}
 
-
+.list-inline a{
+	color: : rgb(14, 122, 230);
+}
+.list-inline a:hover{
+	color: : rgb(13, 72, 163);
+}
 /*============================================================
     Footer
 ============================================================*/
