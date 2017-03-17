@@ -114,12 +114,12 @@ px      68    160    252    */
 }
 
 .animated-nav .navbar-toggle {
-  border: 1px solid #fff;
+  border: 1px solid #0d47a1;
   margin-top: 21px;
 }
 
 .animated-nav .navbar-toggle .icon-bar {
-  background-color: #fff;
+  background-color: rgba(15, 116, 143, 0.8);
 }
 
 .animated-nav .navigation .navbar-nav > li > a,
@@ -128,16 +128,17 @@ px      68    160    252    */
 }
 
 .navigation .navbar-nav > li > a {
-  background-color: #00c7fc;
+  background-color: rgb(16, 67, 139);
 }
 
 .navigation .navbar-nav > li > a:hover {
-  background-color: #00c7fc;
+  background-color: ##08053a;
 }
 
 .navigation .navbar-nav > li.current > a {
   border-bottom: 1px solid #fff;
-  color: #fff;
+  color: #08053a;
+	background: white;
 }
 
 

@@ -12,10 +12,10 @@ License     : GPL
 /* =================================== */
 
 body {
-    background-color: #fff;
+	background-color: #fff;
     font-family: 'Open Sans', sans-serif;
-/*    line-height: 1;*/
 	font-size: 13px;
+	line-height: 1;
     color: #484444;
 }
 #logoImage{
@@ -199,7 +199,7 @@ box-shadow:  0px 0px 5px #888888;
 .navigation .navbar-nav > li.current > a {
   	color: #1a3a98;
 	font-size: 14px;	
-	text-shadow: 0 0 3px #fff ;
+	
 /*  	border-bottom: 3px solid #1a3a98;*/
 }
 
@@ -346,6 +346,7 @@ box-shadow:  0px 0px 5px #888888;
 ============================================================*/
 
 
+
 #service .media > .pull-left{
     margin-right: 50px;
 }
@@ -452,13 +453,13 @@ list-style-type:circle;
   padding-left: 50px;
 }
 
-@media (min-width: 768px) {
-  .modal-xl {
-    width: 90%;
-   max-width:1200px;
-  }
+.modal-body{
+	margin: 20px 20vw 20px 20vw;
 }
-
+@media (min-width: 768px)
+button.close{
+	font-size:60px;
+}
 .modal-header{
     background: #00A6EA;
     border-radius: 3px;
@@ -469,8 +470,15 @@ list-style-type:circle;
     text-align: center;
     color: white;
 }
+.modal-content{
+	width: 100vw;
+	min-height:  100vh;
+}
+
+@media (min-width: 768px)
 .modal-body {
     padding: 54px;
+	margin: 20px 90px 20px 90px;
 }
 .modal-body > img {
 	width: 100%;
@@ -577,7 +585,7 @@ figcaption.mask span {
 ============================================================*/
 
 #about {
-    padding-bottom: 0;
+	padding-bottom: 0;
 }
 
 .about-us img {
@@ -774,8 +782,8 @@ figcaption.mask span {
 ===================================*/
 
 #quotes {
-    background-color: #1F2021;
-}
+	background-color: black;
+  }
 
 .call-to-action {
     color: #fff;
